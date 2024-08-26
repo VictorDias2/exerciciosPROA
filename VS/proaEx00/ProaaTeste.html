@@ -1,0 +1,102 @@
+<!DOCTYPE html>                               <!--Indica a versão do HTML5-->
+<html>
+<head>
+    <title>Testando as primeiras Tags</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            font-size: 17px; /*Tamanho da fonte*/
+            color: rgb(9, 9, 146); /*Cor da Fonte*/
+            text-align: center; /*Alinhamento no centro*/
+            background-image: url(background.webp);
+            background-repeat: no-repeat;
+            background-position: 50%, 50%;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        h1{
+            font-size: 40pt;
+            color: blue;
+            background-color: green;
+        }
+        h2{
+            font-size: 1cm;
+            color: crimson;
+            font-style: italic;
+            font-family: monospace; /*Fonte*/
+            text-align: end; /*Texto no final*/
+            height: 80px; /*Altura*/
+            width: 1450px; /*Largura*/
+        }
+        h3{
+            color: coral;
+            background-color: black;
+            width: 300px;  /*Largura*/
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Mudança de fonte*/
+            font-weight: normal; /*Tirar negrito*/
+            text-decoration: underline; /*Sublinado*/
+        }
+        .diferente{
+            background-color: rgb(92, 255, 71);
+
+        }
+        img{
+            width: 200px    ;
+            height: 150px;
+        }
+        img#foto{
+            width: 400px;
+            height: 350;
+        }
+        h4, h5, h6{
+            font-size: 28px; /*Tamanho da fonte*/
+            color: rgb(112, 146, 9); /*Cor da Fonte*/
+            text-align: center; /*Alinhamento no centro*/
+            background-color: rgb(255, 0, 0);
+            width: 800px;
+            font-family:'Times New Roman', Times, serif;
+            margin: 0px; /*Espaço para fora da area*/
+        }
+        h4{
+            background-color: rgb(180, 2, 121);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+            margin-left: 400px;
+            border: 5px;     /*expessura*/
+            border-style: solid; /*estilo*/
+            border-color: rgb(140, 0, 255);
+            padding: 10px 0px 30px 100px; /*espaço dentro da area*/
+        }
+        h5{
+            border: 4px double rgb(51, 255, 0);  /*expressura/ estilo/ cor*/
+            margin: 30px 0px 20px 200px;
+        }
+        h6{
+            border-bottom: 10px dotted #FFF;
+            text-align: right;
+            margin: auto;        /*centraliza o componente na página*/
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Um texto aqui</p>                      <!--Tag de Paragrafo-->
+    <h1>Testando a heading H1</h1>            <!--Tag de Cabeçalho-->
+    <h2>Testando a heading H2</h2>
+    <img id="foto" src="Imagens/Gif's/digitando.gif" alt="Cara digitando" title="Cara digitando">
+    <p>Testando Paragrafo do 3º Cabeçalho</p>
+
+    <h3>Testando a heading H3</h3>
+    <h3 class="diferente">Testando a heading H3</h3> <!--Caracterizei o H3 para mexer apenas nele no CSS-->
+    <h3>Testando a heading H3</h3>
+
+
+    <h4>Testando a heading H4</h4>
+    <h5>Testando a heading H5</h5>
+    <h6>Testando a heading H6</h6>
+
+    
+    <img src="Imagens/Outras imagens/Flor nas pontas.jpg" alt="Flores" title="Flores">
+    <img src="Imagens/Logotpos/Sorrindo.jpg" alt="Cara Sorrindo" title="Cara Sorrindoo">
+</body>
+</html>
