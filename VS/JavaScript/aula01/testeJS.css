@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+img{
+    width: 120px;
+    height: 100px;
+    margin: 30px
+}
+div{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    width: 350px;
+    height: 200px;
+    border: 5px double;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    visibility: hidden;
+}
+#camada1{
+    color: #080;
+    background-color: rgb(83, 255, 83);
+    border-color: #080;
+}
+#camada2{
+    color: #800;
+    background-color: rgb(255, 78, 78);
+    border-color: #800;
+}
+#camada3{
+    color: #008;
+    background-color: rgb(86, 86, 255);
+    border-color: #008;
+}
+div img{
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin: 10px;
+}

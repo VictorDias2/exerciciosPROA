@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <form id="form" name="form">
+        <fieldset>
+            <legend>Cadastro</legend>
+                <label for="">Entre com o seu nome:</label>
+                <input type="text" name="nome" maxlength="50" size="40" required placeholder="Digite seu nome">
+                <br><br>
+
+                <label for="">Entre com seu E-mail:</label>
+                <input type="email" name="E-mail" maxlength="30px" size="30" required placeholder="Seu E-mail">
+                <br><br>
+
+                <label for="">Entre com sua senha:</label>
+                <input type="password" name="senha" maxlength="30px" size="10" required placeholder="Sua senha">
+                <br><br>
+
+                <label for="">Você utiliza nossa plataforma frequentemente?</label>
+                <input type="radio" name="resp" value="sim">Sim
+                <input type="radio" name="resp" value="vezes">Às vezes
+                <input type="radio" name="resp" value="não">Não
+                <br><br>
+
+                <label for="">Qual navegador você costuma utilizar?</label>
+                <input type="checkbox" name="opcao1" value="fire"/> Firefox
+                <input type="checkbox" name="opcao2" value="chor"/> Chorme
+                <input type="checkbox" name="opcao3" value="edge"/> Edge
+                <input type="checkbox" name="opcao4" value="safa"/> Safari
+                <input type="checkbox" name="opcao5" value="oper"/> Opera
+                <br><br>
+
+                <label for="">Selecione sua área de atuação:</label>
+                <select name="opcao" id="">
+                <option value="">Marketing</option>
+                <option value="">Comercial</option>
+                <option value="">Vendas</option>
+                <option value="">WEB</option>
+                <option value="">Administração</option>
+                <option value="">Outro</option>
+                </select>
+                <br><br>
+
+                <label for="">Entre com um número:</label>
+                <input type="number" min="0" max="10">
+                <br><br>
+
+                <label for="">Selecione uma data:</label>
+                <input type="date" name="" id="">
+                <br><br>
+
+                <input type="search" url="#">
+                <br><br>
+
+                <label for="">Escolha sua cor: </label>
+                <input type="color">
+                <br><br>
+
+                <progress value="80" max="100"> 80% </progress>
+                <br><br>
+
+                <input type="submit" name="enviar" id="enviar" value="enviar">
+
+                
+
+
+
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
