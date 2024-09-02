@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        n = parseInt(prompt('Escreva um número inteiro:'))
+        document.write('Divisão feita: <br><br>')
+
+
+        if (n % 2 == 0){
+            window.document.write(`${n} é divisivel por 2. Portanto <strong>${n} ÷ 2 = ${n/2}</strong><br> `)
+        }
+        else if (n % 2 != 0){
+            document.write(`${n} <strong>NÃO</strong> é divisivel por 2. Pois <strong>${n} ÷ 2 = ${n/2}</strong><br> `)
+        }
+        if (n % 5 == 0){
+            document.write(`${n} é divisivel por 5. Portanto <strong>${n} ÷ 5 = ${n/5}</strong><br> `)
+                if (n % 10 == 0){
+                    document.write(`${n} é divisivel por 10. Portanto <strong>${n} ÷ 10 = ${n/10}</strong><br> `)
+                }
+                else{
+                    document.write(`${n} <strong>NÃO</strong> é divisivel por 10. Pois <strong>${n} ÷ 10 = ${n/10}</strong><br> `)
+                }
+            }
+        else if (n % 5 != 0){
+            document.write(`${n} <strong>NÃO</strong> é divisivel por 5. Pois <strong>${n} ÷ 5 = ${n/5}</strong><br> `)
+            document.write(`${n} <strong>NÃO</strong> é divisivel por 10. Pois <strong>${n} ÷ 10 = ${n/10}</strong> `)
+        }
+
+    </script>
+
+</body>
+</html>
