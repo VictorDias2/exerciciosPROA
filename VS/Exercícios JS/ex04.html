@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+            n1 = parseInt(prompt('Digite o Primeiro Valor:'))
+            n2 = parseInt(prompt(`Dado o primeiro valor: ${n1}\nEscolha outro:`))
+            n3 = parseInt(prompt(`Dado os valores: ${n1} e ${n2}\nEscolha mais um:`))
+
+            if(n1 > n2 && n2 > n3){
+                document.write(`opcao 1: Dentre os valores, em ordem decrescente ficará: <strong>${n1} , ${n2} , ${n3} !</strong>`)
+            }
+            else if(n2 > n1 && n1 > n3){
+                document.write(`opcao 2: Dentre os valores, em ordem decrescente ficará: <strong>${n2} , ${n1} , ${n3} !</strong>`)
+            }
+            else if(n2 > n1 && n1 > n3){
+                document.write(`opcao 3: Dentre os valores, em ordem decrescente ficará: <strong>${n2} , ${n3} , ${n1} !</strong>`)
+            }
+            else if(n1 > n2 && n2 > n1){
+                document.write(`opcao 4: Dentre os valores, em ordem decrescente ficará: <strong>${n3} , ${n2} , ${n1} !</strong>`)
+            }
+            else if(n1 > n3 && n3 > n2){
+                document.write(`opcao 5: Dentre os valores, em ordem decrescente ficará: <strong>${n1} , ${n3} , ${n2} !</strong>`)
+            }
+            else{
+                document.write(`opcao 6: Dentre os valores, em ordem decrescente ficará: <strong>${n3} , ${n1} , ${n2} !</strong>`)
+            }
+            
+    </script>
+
+</body>
+</html>
