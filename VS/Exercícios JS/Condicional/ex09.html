@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 09 De Estrutura de Condição</title>
+</head>
+<body>
+    <h1>Crie um programa que leia o valor do salário mínimo e o valor do salário de um usuário, calcule a quantidade de salários mínimos esse usuário ganha e imprima o resultado. (Salário mínimo = R$1.212,00).</h1>
+
+    <script>
+        minimo = 1212
+        salario = parseFloat(prompt('Qual é o seu salário mereticima??!'))
+        quant_salarios = salario / minimo
+        if(salario < minimo){
+            document.write(`Você ganha <strong>R$${minimo - salario}</strong> a menos que um sálario mínimo<br>Você ganha <strong>${quant_salarios.toFixed(1)}</strong> sálario  mínimo`)
+        }
+        else if(Math.round(quant_salarios) == 1){
+            document.write(`Você ganha apenas <strong>${quant_salarios.toFixed(1)} sálario mínimo</strong>`)
+        }
+        else{
+            document.write(`Você ganha <strong>R$${salario - minimo}</strong> a mais que um sálario mínimo<br>`)
+            document.write(`Você ganha <strong>${quant_salarios.toFixed(2)}</strong> sálarios mínimos`)
+        }
+    </script>
+</body>
+</html>
