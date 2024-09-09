@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a troca de conteúdo em JS</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 17px;
+        }
+        .myimg{
+            width: 35%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e imagem na página</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, accusamus cupiditate. Ex sapiente sunt provident aut rem necessitatibus, praesentium at fugiat nemo, nisi magni iure doloremque laborum atque, similique in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique officia voluptate illo veritatis dolores, laboriosam excepturi porro praesentium animi obcaecati neque numquam quo enim a id doloribus unde eius maxime.</p>
+    <input type="button" name="escuro" id="escuro" value="Modo Escuro" title="Modo Escuro" onclick="escuro()">
+    <input type="button" name="daltonico" id="daltonico" value="Modo Daltônico" title="Modo Daltônico" onclick="daltonico()">
+    <input type="button" name="normal" id="normal" value="Voltar ao Normal" title="Normal" onclick="normal()">
+    <input type="button" name="acessibilidade" id="acessibilidade" value="A+" title="acessibilidade" onclick="acessibilidade()">
+
+
+    <hr> <!--Força pular a linha quando for feito-->
+
+    <img src="imgs/estrada.jpeg" alt="Estrada" class="myimg" title="Estrada">
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, accusamus cupiditate. Ex sapiente sunt provident aut rem necessitatibus, praesentium at fugiat nemo, nisi magni iure doloremque laborum atque, similique in. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod totam neque ut, perspiciatis error porro quo explicabo enim itaque architecto sequi impedit optio molestiae minus quia consequuntur sit commodi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eaque incidunt qui ipsa dolorum, officia molestias debitis doloremque sequi minus excepturi quos, nisi obcaecati dicta quae quidem. Vel, nihil eos.</p>
+
+    <script>
+        let title = document.getElementById("titulo")
+
+        function escuro(){
+            document.querySelector(".fundo").style.backgroundColor="#556";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".fundo").style.fontSize="17px";
+            title.innerHTML="Testando o Modo Escuro"
+        }
+        function daltonico(){
+            document.querySelector(".fundo").style.backgroundColor="#d6c";
+            document.querySelector(".fundo").style.color="#5c0";
+            document.querySelector(".fundo").style.fontSize="17px";
+            title.innerHTML="Testando o Modo Daltonico"
+        }
+        function normal(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color= "black";
+            document.querySelector(".fundo").style.fontSize="17px";
+            title.innerHTML="Testando mudança de cor de fundo Body, a cor da fonte e imagem na página"
+        }
+        function acessibilidade(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color= "black";
+            document.querySelector(".fundo").style.fontSize="23px";
+            title.innerHTML="Testando o Modo com Acessibilidade"
+        }
+
+
+    </script>
+
+</body>
+</html>

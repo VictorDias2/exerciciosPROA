@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a troca de conteúdo em JS</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: rgb(255, 0, 0);
+            text-align: center;
+        }
+        .myimg{
+            width: 35%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e imagem na página</h1>
+
+    <input type="button" name="verde" id="verde" value="Cor Verde" title="Botão Verde" onclick="verde()">
+    <input type="button" name="azul" id="azul" value="Cor Azul" title="Botão Azul" onclick="azul()">
+    <input type="button" name="normal" id="normal" value="Voltar ao Normal" title="Normal" onclick="normal()">
+
+
+    <hr> <!--Força pular a linha quando for feito-->
+
+    <img src="imgs/estrada.jpeg" alt="Estrada" class="myimg" title="Estrada">
+
+    <script>
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myimg").scr="imgs/sol.jpeg"
+        }
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="yellow";
+            document.querySelector(".myimg").scr="imgs/background.webp"
+        }
+        function normal(){
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color= "red";
+            document.querySelector(".myimg").scr="imgs/estrada.jpeg"
+        }
+
+    </script>
+</body>
+</html>
