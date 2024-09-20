@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //DROFO
+            let drofo = ["anel da invisibilidade ", "um par de bota mágica ", "um par de bota mágica ", "uma poção do sono ", "uma porção da inocência ", "uma porção da inocência "]
+            document.write(`O Drofo tem <strong>${drofo}</strong><br><br>`)
+
+            drofo.push('uma bota mágica ', "ovo de dragão ", 'coxinha')
+            document.write('o que Drofo ganhou: <strong>uma bota mágica, ovo de dragão, coxinha</strong> <br><br>')
+            
+            perdeu = [drofo.splice(3, 1), drofo.splice(1, 1)]
+            document.write(`O que Drofo perdeu: <strong>${perdeu}</strong><br><br>`)
+
+            document.write(`INVENTÁRIO FINAL DO DROPO: <strong>${drofo}</strong><br><br><br>`)
+
+        //TORPER
+            let torper = ['capa da invisibilidade ', 'uma pedra do despertar ',  'uma varinha das varinhas ', 'uma poção da inocência' , 'uma poção da mentira ', 'uma poção anti-inteligência ']
+            document.write(`O Torper tem <strong>${torper}</strong><br><br>`)
+
+            torper.push('par de botar mágicas ', 'escudo mágico ', 'espada mágica <br><br>')
+            document.write(`O Torper ganhou: <strong>par de botar mágicas , escudo mágico, espada mágica</strong> <br><br>`)
+
+            document.write(`INVENTÁRIO FINAL DO TORPER: <strong>${torper}</strong><br>`)
+
+            perdeu = [torper.splice(1, 1), torper.splice(3, 2)]
+            document.write('O que o Torper perdeu: <strong>uma poção da mentira, uma pedra, uma poção anti-inteligência </strong><br><br>')
+
+            document.write(`INVENTÁRIO FINAL DO TORPER: <strong>${torper}</strong><br>`)
+
+    </script>
+
+</body>
+</html>

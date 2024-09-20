@@ -9,7 +9,9 @@
     <h1>Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é: F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius</h1>
 
     <script>
-
+        C = parseFloat(prompt('Informe a Temperatura em Cº para fazer a conversão:'))
+        F = (C * 9/5) + 32
+        document.write(`A temperatura de ${C}Cº = ${F}Fº`)
     </script>
 </body>
 </html>
