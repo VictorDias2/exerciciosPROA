@@ -9,7 +9,9 @@
     <h1>Elaborar um programa que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar (US$). O programa deverá solicitar o valor da cotação do dólar e também a quantidade de dólares disponíveis com o usuário. </h1>
 
     <script>
-
+        dolar = parseFloat(prompt('Apresente o valor em US$:'))
+        
+        document.write(`Sendo R$5,46 = US$1<br>Então US$${dolar} = R$${dolar*5.46}`)
     </script>
 </body>
 </html>

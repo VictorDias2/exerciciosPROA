@@ -9,7 +9,20 @@
     <h1>Escreva um programa que leia uma sequência de números do usuário e realize a soma desses números. Encerre a execução quando um número negativo for digitado.</h1>
 
     <script>
-
+        let num = 0;
+        let soma = 0;
+ 
+        while (true) {
+            num = parseInt(prompt("Digite um número"));
+           
+            if (num < 0) {
+                break;
+            } else {
+                soma += num;
+            }
+        }
+ 
+        document.write("O resultado das somas é: " + soma);
     </script>
 </body>
 </html>

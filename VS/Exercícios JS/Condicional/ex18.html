@@ -9,7 +9,71 @@
     <h1>Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. </h1>
 
     <script>
+        pessoa = ''
+        maisnova = 0
 
+        p = prompt('Qual o nome da primeira pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        maisnova = idade
+        pessoa = p
+
+        p = prompt('Qual o nome da segunda pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da terceira pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da quarta pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da sexta pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da sétima pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da oitava pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da nona pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        p = prompt('Qual o nome da décima pessoa?')
+        idade = parseInt(prompt(`Qual a idade de ${p}?`))
+        if(idade < maisnova){
+            maisnova = idade
+            pessoa = p
+        }
+
+        document.write(`A pessoa mais nova é ${pessoa} e ela tem ${maisnova}`)
     </script>
 </body>
 </html>
