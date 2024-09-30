@@ -9,7 +9,16 @@
     <h1>Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.</h1>
 
     <script>
-        
+        cont = 1
+        let nome= ''
+        let media = 0
+        while(nome != 'fim'){  //tentar fazer com true dps e if(nome == 'fim'{breack}) 
+            nome = string(prompt(`Digite o nome da ${cont}ª pessoa:`))
+            let idade = parseInt(prompt(`Idade de ${nome}:`))
+            media += idade
+            cont ++
+    }
+        document.write(`A média foi ${media/cont}`)
     </script>
 </body>
 </html>
