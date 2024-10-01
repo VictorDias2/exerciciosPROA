@@ -9,7 +9,12 @@
     <h1>Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "do-while".</h1>
 
     <script>
-        
+        let n = parseInt(prompt(`Informe um valor:`))
+        let c = 0
+        do{
+            document.write(`${n} x ${c} = ${c*n}<br>`)
+            c++
+        }while(c<=10)
     </script>
 </body>
 </html>
