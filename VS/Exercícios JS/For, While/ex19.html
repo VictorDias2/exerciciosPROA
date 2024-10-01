@@ -9,7 +9,15 @@
     <h1>Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores lidos.</h1>
 
     <script>
+        let c = 1
+        let media = 0
+        do{
+            let n = parseInt(prompt(`Digite o ${c}º número:`))
+            c++
+            media += n
+        }while(c<=5)
 
+        document.write(`A média é de ${media/5}`)
     </script>
 </body>
 </html>
