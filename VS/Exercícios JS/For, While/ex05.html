@@ -9,7 +9,12 @@
     <h1>Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "while".</h1>
 
     <script>
-        
+        let n = parseInt(prompt('Digite um número para exibir sua tabuada:'))
+        cont = 0
+        while(cont<=10){
+            document.write(`${n} x ${cont} = ${cont*n}<br>`)
+            cont +=1
+        }
     </script>
 </body>
 </html>
