@@ -5,7 +5,6 @@ function Home(){
     return(
         <section className={styles.corpo_home}>
             <div className={styles.imagem_lado}>
-                <img src="" alt="" />
             </div>
 
             <div className={styles.texto_lado}>
