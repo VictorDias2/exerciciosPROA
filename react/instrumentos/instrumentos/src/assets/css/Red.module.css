@@ -1,0 +1,17 @@
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    margin-top: 10px solid black;
+    margin-bottom: 10px solid black;
+    width: 100%;
+}
+.loja{
+    width: 600px;
+}
+.text{
+    background-color: rgb(120, 192, 255);
+    width: 60%;
+}
