@@ -9,7 +9,15 @@
     <h1>Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a média das idades.</h1>
 
     <script>
-
+        let c = 0
+        let media = 0
+        do{
+            c++
+            let pessoa = prompt(`Digite o nome da ${c}ª pessoa:`)
+            let idade = parseInt(prompt(`Digite a idade de ${pessoa}`))
+            media += idade
+        }while(c<=4)
+        document.write(`A média é ${media/c} anos`)
     </script>
 </body>
 </html>

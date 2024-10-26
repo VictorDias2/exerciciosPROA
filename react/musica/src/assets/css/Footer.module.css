@@ -1,0 +1,21 @@
+.footer{
+    height: 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+h4{
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+.p_f{
+    color: white;
+    font-size: 15px;
+}
+.whats{
+    width: 50px;
+    padding: 5px;
+}

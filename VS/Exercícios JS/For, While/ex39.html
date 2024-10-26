@@ -9,7 +9,13 @@
     <h1>Crie um programa que leia o nome e a idade de 5 pessoas e exiba a média das idades.</h1>
 
     <script>
-
+        let media = 0
+        for(c=1;c<=5;c++){
+            let pessoa = prompt(`Nome ${c}:`)
+            let idade = parseInt(prompt(`Idade de ${pessoa}`))
+            media += idade
+        }
+        document.write(`A média das idades é de ${media/(c-1)}`)
     </script>
 </body>
 </html>

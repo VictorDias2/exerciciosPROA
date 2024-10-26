@@ -9,7 +9,18 @@
     <h1>Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "do-while".</h1>
 
     <script>
-
+        let fatorial = 1
+        let n = parseInt(prompt('digite um número para analisar o seu fatorial:'))
+        do{
+            document.write(`${n} x `)
+            valor = fatorial*(n-1)
+            fatorial += valor
+            n--
+            if (n == 1){
+                document.write(`1 `)
+            }
+        }while(n >=2)
+        document.write(`= ${fatorial}`)
     </script>
 </body>
 </html>

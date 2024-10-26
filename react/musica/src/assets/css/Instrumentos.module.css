@@ -1,0 +1,25 @@
+section{
+    background-color: rgb(221, 83, 175);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.guitarrinha{
+    width: 300px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.color{
+    color: red;
+    font-weight: bold;
+}

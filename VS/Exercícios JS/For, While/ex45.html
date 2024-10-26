@@ -9,7 +9,21 @@
     <h1>Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final, exiba a média das idades.</h1>
 
     <script>
-
+        let cont = 0
+        let nome= ''
+        let media = 0
+        let somaIdades = 0
+        while(true){
+            cont++
+            nome = prompt(`Digite o nome da ${cont}ª pessoa:`)
+            if(nome === 'fim'){
+                break;
+            }
+            let idade = parseInt(prompt(`Idade de ${nome}:`))
+            somaIdades += idade;
+            
+    }
+        document.write(`A média foi ${somaIdades/(cont-1)}`)
     </script>
 </body>
 </html>

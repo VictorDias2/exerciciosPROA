@@ -9,7 +9,19 @@
     <h1>Faça um programa que leia um número inteiro e exiba se ele é um número primo.</h1>
 
     <script>
-
+        let n = parseInt(prompt('Digite um número inteiro positivo:'))
+        let c= 2
+        let verdadeiro = 0
+        while(c<=(n-1)){
+            if(n%c==0){
+                document.write(`${n} é divisivel por ${c}<br>`)
+                verdadeiro = 1
+            }
+            c++
+        }
+        if(verdadeiro==0){
+            document.write(`${n} é um número primo`)
+        }
     </script>
 </body>
 </html>

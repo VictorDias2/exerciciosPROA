@@ -1,0 +1,10 @@
+main{
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+body{
+    background: url(./assets/Imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

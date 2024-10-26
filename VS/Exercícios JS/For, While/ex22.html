@@ -9,7 +9,19 @@
     <h1>Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</h1>
 
     <script>
-        
+        let n = parseInt(prompt('Escreva um número para verificar se ele é primo:'))
+        c = 2
+        do{
+            if(n%c==0){
+                document.write(`${n} é divisivel por ${c}<br>Portando ${n} não é primo`)
+                break
+            }
+            c++
+            if(c==(n-1)){
+                document.write(`O número ${n} é um número primo`)
+                break
+            }
+        }while(c<=n)
     </script>
 </body>
 </html>

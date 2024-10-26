@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 21 De Estrutura de Repetição</title>
+</head>
+<body>
+    <h1>Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "do-while".</h1>
+
+    <script>
+        let n = parseInt(prompt(`Informe um número:`))
+        let c=1
+        do{
+            if(n%c==0){
+                document.write(`<strong>O número ${n} é divisivel por ${c}</strong> &nbsp&nbsp&nbsp&nbsp&nbsp(${n} ÷ ${c} = ${n/c})<br></br>`)
+            }
+            c++
+        }while(c<=n)
+    </script>
+</body>
+</html>

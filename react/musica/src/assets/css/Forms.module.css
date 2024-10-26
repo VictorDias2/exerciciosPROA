@@ -1,0 +1,15 @@
+.geral{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 380px;
+    border: 10px solid slategray;
+}
+.divisoria2{
+    width: 40%;
+}
+.zap{
+    width: 400px;
+}

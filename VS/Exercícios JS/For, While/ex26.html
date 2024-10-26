@@ -9,7 +9,12 @@
     <h1>Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "do-while".</h1>
 
     <script>
-
+        let n = parseInt(prompt(`Escolha um número:`))
+        let c =2
+        do{
+            document.write(`${c} + ${c} = ${c+c}<br>`)
+            c+=2
+        }while(c<=n)
     </script>
 </body>
 </html>
